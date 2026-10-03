@@ -1,0 +1,72 @@
+:root {
+  --carta: #fdfcf9;
+  --inchiostro: #222;
+  --tenue: #6b6b6b;
+  --filo: #ddd8cc;
+  --citazione: #f3efe5;
+  --link: #8a3b12;
+  --si: #2f6b3a;
+  --forse: #8a6a12;
+  --no: #9b2c2c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --carta: #1b1a17;
+    --inchiostro: #e8e4da;
+    --tenue: #a39e92;
+    --filo: #3a372f;
+    --citazione: #26241f;
+    --link: #e0a073;
+    --si: #8fc79a;
+    --forse: #d9bc6a;
+    --no: #e59a9a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 16px;
+  background: var(--carta);
+  color: var(--inchiostro);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+main, .testata, footer { max-width: 38em; margin: 0 auto; }
+a { color: var(--link); }
+.testata { padding: 1.2em 0; border-bottom: 1px solid var(--filo); font-size: 0.9em; }
+.testata a { text-decoration: none; }
+.testata > a { font-weight: bold; }
+.testata span { color: var(--tenue); }
+footer { margin-top: 4em; padding: 1.2em 0 3em; border-top: 1px solid var(--filo); color: var(--tenue); font-size: 0.85em; }
+h1 { font-weight: normal; line-height: 1.3; }
+h1.frase { font-size: 1.6em; font-style: italic; margin: 0.2em 0 0.6em; }
+h2 { font-size: 1.2em; margin-top: 2em; }
+.attribuita { color: var(--tenue); margin: 2em 0 0; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.05em; }
+.verdetto { padding: 0.6em 0.9em; border-left: 4px solid; background: var(--citazione); }
+.verdetto-autentica { border-color: var(--si); }
+.verdetto-rimaneggiata, .verdetto-riscrittura, .verdetto-incerta { border-color: var(--forse); }
+.verdetto-falsa { border-color: var(--no); }
+.in-breve { font-size: 1.05em; }
+.date { color: var(--tenue); font-size: 0.85em; }
+.revisione { padding: 0.6em 0.9em; border: 2px solid var(--no); }
+blockquote { margin: 1em 0; padding: 0.4em 1em; background: var(--citazione); border-left: 3px solid var(--filo); }
+blockquote p { margin: 0.5em 0; }
+.tabella { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 1em 0; }
+th, td { text-align: left; vertical-align: top; padding: 0.5em; border-bottom: 1px solid var(--filo); }
+th { font-weight: bold; }
+code { font-size: 0.85em; }
+.grado { font-size: 0.75em; padding: 0.05em 0.45em; border-radius: 0.3em; border: 1px solid; white-space: nowrap; font-family: system-ui, sans-serif; }
+.grado-fonte { color: var(--si); }
+.grado-trascrizione { color: var(--forse); }
+.grado-non-verificato { color: var(--no); }
+ul.casi { list-style: none; padding: 0; }
+ul.casi li { padding: 0.8em 0; border-bottom: 1px solid var(--filo); }
+ul.casi a { font-style: italic; text-decoration: none; font-size: 1.1em; }
+.chi { color: var(--tenue); font-size: 0.85em; }
+.verdetto-breve { font-size: 0.8em; font-family: system-ui, sans-serif; }
+.verdetto-breve.verdetto-autentica { color: var(--si); }
+.verdetto-breve.verdetto-rimaneggiata, .verdetto-breve.verdetto-riscrittura, .verdetto-breve.verdetto-incerta { color: var(--forse); }
+.verdetto-breve.verdetto-falsa { color: var(--no); }
+.vuoto { color: var(--tenue); }
