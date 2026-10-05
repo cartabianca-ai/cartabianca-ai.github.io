@@ -70,3 +70,5 @@ ul.casi a { font-style: italic; text-decoration: none; font-size: 1.1em; }
 .verdetto-breve.verdetto-rimaneggiata, .verdetto-breve.verdetto-riscrittura, .verdetto-breve.verdetto-incerta { color: var(--forse); }
 .verdetto-breve.verdetto-falsa { color: var(--no); }
 .vuoto { color: var(--tenue); }
+p.puntate { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--tenue); font-size: 0.9em; }
+ol.puntate li { margin: 0.4em 0; }
